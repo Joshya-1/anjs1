@@ -1,0 +1,14 @@
+<!-- <p>listcomponent works!</p> -->
+<h1>listcomponent</h1>
+<div *ngIf="movie.length>0;then movielist;else nodata">
+
+</div>
+<ng-template #movielist>
+    <ul>
+        <li *ngFor="let movieName of movie">{{movieName}}</li>
+    </ul>
+</ng-template>
+<ng-template #nodata>
+   <h3>No data is there in your array!</h3>
+</ng-template>
+

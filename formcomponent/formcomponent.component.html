@@ -1,0 +1,8 @@
+<!-- <p>formcomponent works!</p> -->
+<h1>formcomponent</h1>
+<form action="">
+    <label for="">Type movie name</label>
+    <input type="text" name="movieName" [(ngModel)]="movieName">
+    <button (click)="movieslist()">Submit</button>
+</form>
+<app-listcomponent [movieInput]="movie"></app-listcomponent>
